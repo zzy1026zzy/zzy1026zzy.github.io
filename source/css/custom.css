@@ -14,7 +14,8 @@ body > #video-bg,
   width: 100vw !important;
   height: 100vh !important;
   max-width: none !important;
-  object-fit: cover !important;
+  object-fit: contain !important;
+  background: #0b1020 !important;
   pointer-events: none !important;
 }
 
@@ -22,8 +23,22 @@ body > #video-bg,
   background: rgba(13, 17, 23, 0.52);
 }
 
-#page-header.full_page {
+#page-header.full_page,
+#page-header.full_page::before {
   background: transparent !important;
+  background-image: none !important;
+}
+
+#page-header.full_page {
+  height: 100vh !important;
+}
+
+#page-header #site-info {
+  display: block !important;
+}
+
+#page-header #scroll-down {
+  display: block !important;
 }
 
 #footer {
