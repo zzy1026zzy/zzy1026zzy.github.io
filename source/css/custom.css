@@ -1,12 +1,23 @@
 #web_bg {
-  background: linear-gradient(rgba(246, 248, 250, 0.72), rgba(246, 248, 250, 0.72)), url("/img/wangye.png");
+  z-index: -1;
+  background: linear-gradient(rgba(246, 248, 250, 0.58), rgba(246, 248, 250, 0.58)), url("/img/wangye.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
+#video-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  pointer-events: none;
+}
+
 [data-theme="dark"] #web_bg {
-  background: linear-gradient(rgba(13, 17, 23, 0.76), rgba(13, 17, 23, 0.76)), url("/img/wangye.png");
+  background: linear-gradient(rgba(13, 17, 23, 0.66), rgba(13, 17, 23, 0.66)), url("/img/wangye.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

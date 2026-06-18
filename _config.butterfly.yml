@@ -350,6 +350,7 @@ inject:
   head:
     - <link rel="stylesheet" href="/css/custom.css">
   bottom:
+    - <video id="video-bg" autoplay muted loop playsinline preload="metadata"><source src="/img/background.mp4" type="video/mp4"></video>
 
 CDN:
   internal_provider: local
