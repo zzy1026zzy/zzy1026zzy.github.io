@@ -1,0 +1,28 @@
+#web_bg {
+  background: linear-gradient(rgba(246, 248, 250, 0.72), rgba(246, 248, 250, 0.72)), url("/img/wangye.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+[data-theme="dark"] #web_bg {
+  background: linear-gradient(rgba(13, 17, 23, 0.76), rgba(13, 17, 23, 0.76)), url("/img/wangye.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#page-header.full_page {
+  background-position: center;
+}
+
+#aside-content .card-widget,
+#recent-posts > .recent-post-item,
+.layout > div:first-child:not(.recent-posts),
+.layout_post > #post {
+  backdrop-filter: blur(8px);
+}
+
+.avatar-img img {
+  object-fit: cover;
+}
