@@ -1,30 +1,39 @@
 #web_bg {
-  z-index: -1;
-  background: linear-gradient(rgba(246, 248, 250, 0.58), rgba(246, 248, 250, 0.58)), url("/img/wangye.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-#video-bg {
   position: fixed;
   inset: 0;
-  z-index: -2;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  pointer-events: none;
+  z-index: -1;
+  background: rgba(246, 248, 250, 0.42);
+}
+
+body > #video-bg,
+#video-bg {
+  position: fixed !important;
+  display: block !important;
+  inset: 0;
+  z-index: -3 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: none !important;
+  object-fit: cover !important;
+  pointer-events: none !important;
 }
 
 [data-theme="dark"] #web_bg {
-  background: linear-gradient(rgba(13, 17, 23, 0.66), rgba(13, 17, 23, 0.66)), url("/img/wangye.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: rgba(13, 17, 23, 0.52);
 }
 
 #page-header.full_page {
-  background-position: center;
+  background: transparent !important;
+}
+
+#footer {
+  background: rgba(0, 0, 0, 0.28) !important;
+}
+
+#body-wrap,
+#page-header,
+#content-inner {
+  background: transparent;
 }
 
 #aside-content .card-widget,

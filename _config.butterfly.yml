@@ -26,13 +26,13 @@ avatar:
   effect: false
 
 disable_top_img: false
-default_top_img: /img/wangye.png
-index_img: /img/wangye.png
-archive_img: /img/wangye.png
-tag_img: /img/wangye.png
-category_img: /img/wangye.png
-footer_img: /img/wangye.png
-background: '#f6f8fa'
+default_top_img: false
+index_img: false
+archive_img: false
+tag_img: false
+category_img: false
+footer_img: false
+background:
 
 cover:
   index_enable: true
@@ -350,7 +350,7 @@ inject:
   head:
     - <link rel="stylesheet" href="/css/custom.css">
   bottom:
-    - <video id="video-bg" autoplay muted loop playsinline preload="metadata"><source src="/img/background.mp4" type="video/mp4"></video>
+    - <script>document.addEventListener('DOMContentLoaded',function(){if(document.getElementById('video-bg'))return;var v=document.createElement('video');v.id='video-bg';v.autoplay=true;v.muted=true;v.loop=true;v.playsInline=true;v.preload='metadata';var s=document.createElement('source');s.src='/img/background.mp4';s.type='video/mp4';v.appendChild(s);document.body.prepend(v);});</script>
 
 CDN:
   internal_provider: local
